@@ -7,12 +7,28 @@
         <title>Document</title>
     </head>
     <body>
-        <input id="input-name" type="text" placeholder="Nome e Cognome">
-        <input id="input-km" type="text" placeholder="n. km da percorrere">
-        <input id="input-age" type="text" placeholder="Età del passeggero">
-        <button id="calc-button" >Calcola</button>
-        <button id="erase-button" >Svuota campi</button>
-        <div id="user-message" ></div>
+        <div class="container">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="row justify-center white-bg border-radius mt">
+                <div class="col-70 d-flex justify-between">
+                    <input class="imput-field" id="input-name" type="text" placeholder="Nome e Cognome">
+                    <input class="imput-field" id="input-km" type="text" placeholder="n. km da percorrere">
+                    <input class="imput-field" id="input-age" type="text" placeholder="Età del passeggero"> 
+                </div>
+                <div class="col-70 d-flex mt d-flex justify-center button-space">
+                    <button class="btn" id="calc-button" >Calcola</button>
+                    <button class="btn" id="erase-button" >Svuota campi</button>
+                </div>
+            </div>
+        
+            <h1>IL TUO PREVENTIVO</h1>
+                <div class="row justify-center white-bg border-radius">
+                    <div class="col-70 ">
+                        <div id="user-message"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script type="text/javascript" src="./JS/script.js"></script>
     </body>
     </html>

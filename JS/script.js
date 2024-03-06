@@ -22,13 +22,13 @@ calcButton.addEventListener(`click`, function() {
         if(userAge < 18){
             underDiscount = (ridePrice * 20) / 100;
             totalUnderPrice = ridePrice - underDiscount;
-            userMessage = `Salve ${userName}, Km da percorrere: ${userKm}Km. Prezzo standard per la tratta: ${roundRidePrice}€. Sconto minorenni del 20% applicato. Il prezzo effettivo del suo biglietto è: ${totalUnderPrice.toFixed(2)}€`
+            userMessage = `Salve ${userName}, deve percorrere: ${userKm}Km. Il prezzo standard per la tratta è: ${roundRidePrice}€. Le verrà applicatoSconto uno sconto minorenni del 20% . Il prezzo effettivo del suo biglietto è: ${totalUnderPrice.toFixed(2)}€`
         } else if(userAge >=65){
             overDiscount = (ridePrice * 40) / 100;
             totalOverPrice = ridePrice - overDiscount;
-            userMessage = `Salve ${userName}, Km da percorrere: ${userKm}Km. Prezzo standard per la tratta: ${roundRidePrice}€. Sconto Over65 del 40% applicato. Il prezzo effettivo del suo biglietto è: ${totalOverPrice.toFixed(2)}€`
+            userMessage = `Salve ${userName}, deve percorrere: ${userKm}Km. il prezzo standard per la tratta è: ${roundRidePrice}€. Le verrà applicato uno sconto Over65 del 40%. Il prezzo effettivo del suo biglietto è: ${totalOverPrice.toFixed(2)}€`
         } else{
-            userMessage = `Salve ${userName}, Km da percorrere: ${userKm}Km Il prezzo del suo biglietto è: ${roundRidePrice}€`
+            userMessage = `Salve ${userName}, deve percorrere: ${userKm}Km Il prezzo del suo biglietto è: ${roundRidePrice}€`
         }
 
      // 3. viene stampato a div #user-message il messaggio per l utente con prezzo e sconto applicato
